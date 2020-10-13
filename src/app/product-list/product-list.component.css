@@ -1,0 +1,8 @@
+#product-list li { display: block; cursor: pointer; list-style-type: none; padding: 10px; margin: 10px; border: solid 1px rgba(0,0,0,0.25); } 
+#product-list { padding: 0; }
+.active-product { background-color: rgba(0,0,0,0.05); }
+
+
+@media (min-width: 576px) { 
+  #product-list li { display: inline-block; }
+}

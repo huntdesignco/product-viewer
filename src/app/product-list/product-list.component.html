@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-12">
+    <ul id="product-list">
+      <li *ngFor="let product of this.ProductList.products" (click)="this.ProductList.selectProduct(product.id)" [ngClass]="{'active-product': product.id==this.ProductList.selectedProduct}">
+        {{ product.name }}
+      </li>
+	</ul>
+  </div>
+</div>

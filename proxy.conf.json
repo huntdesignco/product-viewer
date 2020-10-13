@@ -1,0 +1,19 @@
+{
+
+"/product-viewer**": {
+
+"target": "https://xniz-linux.com:4400/product-viewer/",
+
+"secure":true,
+
+"logLevel":"debug",
+
+"pathRewrite": {
+
+        "^/product-viewer": ""
+
+    }
+
+}
+
+}

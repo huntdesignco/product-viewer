@@ -1,0 +1,14 @@
+<div class="row product-viewer">
+  <div class="col-md-6 image-view">
+	<img src="assets/img/{{ this.ProductList.selectedProduct }}/stock-{{ this.ProductList.selectedImage }}.png">
+	<product-gallery></product-gallery>
+
+  </div>
+	
+  <div class="col-md-6">
+    <h1 class="product-title">{{ this.ProductList.products[this.ProductList.selectedProduct].name }}</h1>
+    <hr>
+	<p>{{ this.ProductList.products[this.ProductList.selectedProduct].desc }}</p>
+    <button type="button" class="btn btn-secondary" (click)="showMore(this.ProductList.selectedProduct)">Read more</button>
+  </div>
+</div>

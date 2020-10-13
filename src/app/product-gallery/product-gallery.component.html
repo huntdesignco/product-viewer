@@ -1,0 +1,10 @@
+<div class="row" id="product-gallery">
+
+  <div class="col-md-12">
+    <ul>
+      <li *ngFor='let in of counter(this.ProductList.products[this.ProductList.selectedProduct].imgcount) ;let i = index'>
+	    <img src="assets/img/{{ this.ProductList.selectedProduct }}/stock-{{i}}.png" (click)="selectProductImage(i)">
+	  </li>
+	</ul>
+  </div>
+</div>
